@@ -13,6 +13,12 @@
 		<!-- Le positionnement statique est celui par défaut. -->
 
 		<!-- Exemple -->
+		<!-- <p style="position: static">
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
+			amet laboriosam quia ut aliquam repudiandae velit corporis earum
+			praesentium ea nihil tempora, animi possimus nobis quam repellendus
+			facere quo quidem?
+		</p> -->
 
 		<!-------------------------------------------------------------------->
 		<!-- RELATIF- -------------------------------------------------------->
@@ -21,6 +27,18 @@
 		<!-- Le positionnement relatif permet de modifier la position finale d'un élément grâce aux propriétés top, bottom, left et right. -->
 
 		<!-- Exemple -->
+		<!-- <p style="position: relative; top: 2rem; background-color: gainsboro">
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel in
+			deleniti error fugit consequatur praesentium nostrum doloremque
+			asperiores iste labore, veniam nihil consectetur unde modi velit
+			veritatis et, sint sequi.
+		</p>
+		<p style="position: relative">
+			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, rem
+			voluptatibus? Aliquam excepturi debitis consequatur, reiciendis
+			porro iusto recusandae veritatis eos ad adipisci quo architecto
+			natus qui aperiam voluptatibus numquam.
+		</p> -->
 
 		<!-- L'élément occupe une place dans le cours normal de la mise en page. -->
 
@@ -33,20 +51,56 @@
 		<!-- Un élément positionné de manière absolue ne fait plus partie du cours normal de la mise en page. Il se trouve maintenant sur un plan qui lui est propre, séparé de tout le reste. -->
 
 		<!-- Exemple -->
+		<!-- <div style="padding: 1rem; border: 1px solid red; position: relative">
+			<div style="border: 1px solid; padding: 1rem; margin: 1rem">
+				<button>Button</button
+				><button style="position: absolute; top: 0">Button</button>
+				<button>Button</button>
+				<button>Button</button>
+			</div>
+		</div> -->
 
 		<!-- top, bottom, left et right se comportent différemment avec le positionnement absolu. Au lieu de positionner l'élément en fonction de sa position relative dans la mise en page du document, ils définissent la distance à laquelle l'élément doit se situer par rapport aux côtés de l'élément contenant. -->
 
 		<!-- Exemple -->
+		<!-- Voir ci-haut -->
 
 		<!-- Vous pouvez modifier le contexte de positionnement, c'est-à-dire l'élément par rapport auquel l'élément est positionné de façon absolue. Pour cela, on définira le positionnement d'un des éléments ancêtres. -->
 
 		<!-- Exemple -->
+		<!-- Voir ci-haut -->
 
 		<!-- Z-INDEX --------------------------------------------------------->
 
 		<!-- « z-index » est une référence à l'axe z. Les valeurs de z-index affectent donc l'emplacement des éléments positionnés sur cet axe. -->
 
 		<!-- Exemple -->
+		<!-- <p
+			style="
+				background-color: white;
+				position: relative;
+				top: 2.5rem;
+				border: 1px solid;
+			"
+		>
+			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque,
+			saepe officiis perferendis earum odit quam expedita tempora
+			voluptatum odio minus et quidem provident? Dolorem ea error quaerat
+			quasi maiores adipisci.
+		</p>
+		<p
+			style="
+				border: 1px solid red;
+				position: relative;
+				background-color: gainsboro;
+				z-index: -1;
+			"
+		>
+			Neque asperiores officia, ipsum, excepturi id a vero rem, hic quo
+			sequi quidem. Saepe neque debitis tenetur nobis, fuga possimus,
+			mollitia reiciendis iusto officia facere delectus ducimus,
+			blanditiis voluptates porro.
+		</p> -->
 
 		<!-------------------------------------------------------------------->
 		<!-- FIXE ------------------------------------------------------------>
@@ -55,6 +109,13 @@
 		<!-- Le positionnement fixe fonctionne de la même manière que le positionnement absolu, mais par rapport à la fenêtre du navigateur. -->
 
 		<!-- Exemple -->
+		<!-- <h1 style="position: fixed; top: 0; left: 0">Bonjour Monde</h1>
+		<p style="padding-bottom: 100vh">
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
+			omnis repellat odio vel vitae, facere a quibusdam, repudiandae
+			assumenda quos cum dolore voluptates totam consectetur molestiae
+			dolorum aliquid ratione optio.
+		</p> -->
 
 		<!-- Tout comme un élément positionné de manière absolue, un élément fixe ne fait plus partie du cours normal de la mise en page. -->
 
@@ -67,6 +128,14 @@
 		<!-- Le positionnement adhérent est un hybride entre le positionnement relative et fixe : l'élément est en positionnement relatif jusqu'à un certain seuil, seuil au-delà duquel il est en positionnement fixe. -->
 
 		<!-- Exemple -->
+		<div style="margin-top: 25%"></div>
+		<h1 style="position: sticky; bottom: 1rem">Bonjour Monde</h1>
+		<p style="padding-bottom: 100vh">
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
+			omnis repellat odio vel vitae, facere a quibusdam, repudiandae
+			assumenda quos cum dolore voluptates totam consectetur molestiae
+			dolorum aliquid ratione optio.
+		</p>
 
 		<!-------------------------------------------------------------------->
 		<!-- RESSOURCES ------------------------------------------------------>

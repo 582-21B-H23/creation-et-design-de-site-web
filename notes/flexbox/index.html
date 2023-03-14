@@ -13,10 +13,19 @@
 		<!-- Flexbox est une méthode de mise en page selon un axe principal, permettant de disposer des éléments en ligne ou en colonne. Les éléments se dilatent ou se rétractent pour occuper l'espace disponible. -->
 
 		<!-- Exemple -->
+		<!-- <div style="display: flex">
+			<button>Button</button><button>Button</button><button>Button</button
+			><button>Button</button><button>Button</button>
+		</div> -->
 
 		<!-- L'élément parent dont la propriété est `display: flex` est appelé le conteneur flex (flex container). Les éléments disposés en tant que boîtes flexibles à l'intérieur du conteneur flex sont appelés éléments flex (flex items). -->
 
 		<!-- Exemple -->
+		<!-- <div style="display: flex">
+			<button>Element flex</button><button>Element flex</button
+			><button>Element flex</button><button>Element flex</button
+			><button>Element flex</button>
+		</div> -->
 
 		<!-------------------------------------------------------------------->
 		<!-- COLONNES OU LIGNE ----------------------------------------------->
@@ -25,6 +34,11 @@
 		<!-- Lorsque les éléments sont disposés en boîtes flexibles, ils sont disposés le long de deux axes. L'axe principal (main axis) est l'axe de la direction dans laquelle sont disposés les éléments flex. L'axe croisé (cross axis) est l'axe perpendiculaire à l'axe principal. Flexbox dispose de la propriété `flex-direction` pour indiquer la direction de l'axe principal. -->
 
 		<!-- Exemple -->
+		<!-- <div style="display: flex; flex-direction: column">
+			<button>Element flex</button><button>Element flex</button
+			><button>Element flex</button><button>Element flex</button
+			><button>Element flex</button>
+		</div> -->
 
 		<!-------------------------------------------------------------------->
 		<!-- ENVELOPPEMENT --------------------------------------------------->
@@ -33,6 +47,20 @@
 		<!-- Quand votre conteneur est de largeur ou hauteur fixe, il arrive que les éléments flex débordent. Pour y remédier, on peut utiliser la propriété `flex-wrap`. -->
 
 		<!-- Exemple -->
+		<!-- <div
+			style="
+				display: flex;
+				width: 125px;
+				border: 1px solid;
+				flex-wrap: wrap;
+			"
+		>
+			<button style="width: 50px">Element flex</button
+			><button style="width: 50px">Element flex</button
+			><button style="width: 50px">Element flex</button
+			><button style="width: 50px">Element flex</button
+			><button style="width: 50px">Element flex</button>
+		</div> -->
 
 		<!-------------------------------------------------------------------->
 		<!-- TAILLE MODULABLE ------------------------------------------------>
@@ -41,18 +69,73 @@
 		<!-- Examinons comment nous pouvons contrôler la proportion d'éléments flexibles dans l'espace. La propriété `flex` définie la quantité d'espace disponible que chaque élément flex prendra le long de l'axe principal. -->
 
 		<!-- Exemple -->
+		<!-- <div
+			style="
+				display: flex;
+				width: 125px;
+				border: 1px solid;
+				flex-wrap: wrap;
+			"
+		>
+			<button style="width: 50px; flex: 1">Element flex</button
+			><button style="width: 50px; flex: 1">Element flex</button
+			><button style="width: 50px; flex: 1">Element flex</button
+			><button style="width: 50px; flex: 1">Element flex</button
+			><button style="width: 50px; flex: 1">Element flex</button>
+		</div> -->
 
 		<!-- `flex` est une forme abrégée de propriété qui peut servir à définir trois valeurs différentes : `flex-grow`, `flex-shrink`, `flex-basis`. Comme nous avons vu ci-haut, `flex-grow` définie la quantité d'espace disponible que chaque élément flex prendra le long de l'axe principal.  -->
 
 		<!-- Exemple -->
+		<!-- <div
+			style="
+				display: flex;
+				width: 500px;
+				border: 1px solid;
+				flex-wrap: wrap;
+			"
+		>
+			<button style="width: 50px; flex-grow: 1">Element flex</button
+			><button style="width: 50px; flex-grow: 10">Element flex</button>
+		</div> -->
 
 		<!-- `flex-shrink` indique la quantité de dépassement à retirer de l'extension de chacun des éléments flex pour les empêcher de déborder du conteneur. -->
 
 		<!-- Exemple -->
+		<!-- <div style="display: flex; width: 250px; border: 1px solid">
+			<button style="width: 250px; flex-shrink: 1">Element flex</button
+			><button style="width: 250px; flex-shrink: 2">Element flex</button>
+		</div> -->
 
 		<!-- Pour faire simple, `flex-basis` équivaut à `width` et `height` (selon la direction de l'axe principal). -->
 
 		<!-- Exemple -->
+		<!-- <div
+			style="
+				display: flex;
+				width: 500px;
+				border: 1px solid;
+				flex-direction: row;
+			"
+		>
+			<button style="flex-basis: 250px; flex-grow: 1">Element flex</button
+			><button style="flex-basis: 250px; flex-grow: 1">
+				Element flex
+			</button>
+		</div> -->
+
+		<!-- Exemple -->
+		<div
+			style="
+				display: flex;
+				width: 500px;
+				border: 1px solid;
+				flex-direction: row;
+			"
+		>
+			<button style="flex: 2 1 50px">Element flex</button
+			><button style="flex: 1 1 50px">Element flex</button>
+		</div>
 
 		<!-------------------------------------------------------------------->
 		<!-- ALIGNEMENT ------------------------------------------------------>
