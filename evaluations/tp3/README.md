@@ -1,8 +1,8 @@
 # TP3 : Échafaudage
 
-Ce dépôt contient un échafaudage pour le TP3. Tous vos fichiers devraient être dans le dossier `dépôt`. 
+Ce dépôt contient un échafaudage pour le TP3. Tous vos fichiers devraient être dans le dossier `src`.
 
-Le dossier `components` contient les différents composants de votre site Web, lesquels vous pouvez importer grâce à l’expression PHP `<?php include 'path/to/component'; ?>`. 
+Le dossier `components` contient les différents composants de votre site Web, lesquels vous pouvez importer grâce à l’expression PHP `<?php include 'path/to/component'; ?>`.
 
 Les ressources de votre site Web devraient se trouver dans le dossier `assets`, séparées selon leur type (feuille de styles, fonte, image, etc.).
 
