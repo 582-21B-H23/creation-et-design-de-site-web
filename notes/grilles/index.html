@@ -21,6 +21,10 @@
 			footer {
 				background-color: white;
 			}
+
+			h1 {
+				margin: 0;
+			}
 		</style>
 	</head>
 	<body>
@@ -57,6 +61,18 @@
 		<!-- Pour créer des gouttières entre les rangées, nous nous servons des propriétés `column-gap` et `row-gap`. La propriété `gap` définit les deux d'un coup. -->
 
 		<!-- Example -->
+		<!-- <div style="display: grid; gap: 1rem">
+			<header>Header</header>
+			<nav>Nav</nav>
+			<main>
+				<h1>Main</h1>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+				Laudantium et esse consequatur veritatis cumque magni voluptatum
+				deleniti labore neque nulla aliquam facilis, explicabo omnis
+				temporibus dolorum sed optio rerum atque.
+			</main>
+			<footer>Footer</footer>
+		</div> -->
 
 		<!-------------------------------------------------------------------->
 		<!-- GRID-TEMPLATE-COLUMNS & GRID-TEMPLATE-ROWS ---------------------->
@@ -65,16 +81,70 @@
 		<!-- Déclarer `display: grid` fournit une grille à une seule colonne. Pour ajouter des colonnes à notre grille, nous utilisons le propriété `grid-template-columns`. Vous pouvez utiliser n'importe quelle unité de taille ou bien un pourcentage pour créer une colonne. -->
 
 		<!-- Exemple -->
+		<!-- <div
+			style="
+				display: grid;
+				gap: 1rem;
+				grid-template-rows: 200px 200px 200px 200px;
+			"
+		>
+			<header>Header</header>
+			<nav>Nav</nav>
+			<main>
+				<h1>Main</h1>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+				Laudantium et esse consequatur veritatis cumque magni voluptatum
+				deleniti labore neque nulla aliquam facilis, explicabo omnis
+				temporibus dolorum sed optio rerum atque.
+			</main>
+			<footer>Footer</footer>
+		</div> -->
 
 		<!-- UNITÉ `FR` ------------------------------------------------------>
 
 		<!-- En plus des unités de longueur et des pourcentages, nous pouvons utiliser l'unité `fr` pour moduler la taille des lignes et colonnes d'une grille. Cette unité représente une fraction de l'espace disponible (et non totale) du conteneur. -->
 
 		<!-- Exemple -->
+		<!-- <div
+			style="
+				display: grid;
+				gap: 1rem;
+				grid-template-columns: 100px 1fr 1fr;
+			"
+		>
+			<header>Header</header>
+			<nav>Nav</nav>
+			<main>
+				<h1>Main</h1>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+				Laudantium et esse consequatur veritatis cumque magni voluptatum
+				deleniti labore neque nulla aliquam facilis, explicabo omnis
+				temporibus dolorum sed optio rerum atque.
+			</main>
+			<footer>Footer</footer>
+		</div> -->
 
 		<!-- Il est possible de mélanger les unités `fr` et des largeurs fixes. L'espace nécessaire aux colonnes de largeur fixe sera réservé avant la distribution proportionnelle de l'espace restant aux autres colonnes. -->
 
 		<!-- Exemple -->
+		<!-- <div
+			style="
+				display: grid;
+				gap: 1rem;
+				grid-template-columns: 100px 1fr 1fr;
+			"
+		>
+			<header>Header</header>
+			<nav>Nav</nav>
+			<main>
+				<h1>Main</h1>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+				Laudantium et esse consequatur veritatis cumque magni voluptatum
+				deleniti labore neque nulla aliquam facilis, explicabo omnis
+				temporibus dolorum sed optio rerum atque.
+			</main>
+			<footer>Footer</footer>
+		</div> -->
 
 		<!-------------------------------------------------------------------->
 		<!-- LA FONCTION `REPEAT()` ------------------------------------------>
@@ -83,14 +153,50 @@
 		<!-- Vous pouvez répéter tout ou partie d'une liste de colonnes à l'aide de la fonction CSS `repeat()`. La fonction `repeat()` prend 2 arguments séparées par une virgule : le nombre de répétitions de la liste, et la valeur que vous voulez répéter.  -->
 
 		<!-- Exemple -->
+		<!-- <div
+			style="
+				display: grid;
+				gap: 1rem;
+				grid-template-columns: repeat(2, 1fr 2fr);
+			"
+		>
+			<header>Header</header>
+			<nav>Nav</nav>
+			<main>
+				<h1>Main</h1>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+				Laudantium et esse consequatur veritatis cumque magni voluptatum
+				deleniti labore neque nulla aliquam facilis, explicabo omnis
+				temporibus dolorum sed optio rerum atque.
+			</main>
+			<footer>Footer</footer>
+		</div> -->
 
 		<!-------------------------------------------------------------------->
 		<!-- LA FONCTION `MINMAX()` ------------------------------------------>
 		<!-------------------------------------------------------------------->
 
-		<!-- La fonction `minmax()` nous permet de fixer une taille maximale et minimale pour une rangée. Par exemple, pour `minmax(100px, auto)`, la taille minimale est de 100 pixels, mais la maximale est `auto` — elle s'agrandira selon le contenu. -->
+		<!-- La fonction `minmax()` nous permet de fixer une taille minimale et maximale pour une rangée. Par exemple, pour `minmax(100px, auto)`, la taille minimale est de 100 pixels, mais la maximale est `auto` — elle s'agrandira selon le contenu. -->
 
 		<!-- Exemple -->
+		<!-- <div
+			style="
+				display: grid;
+				gap: 1rem;
+				grid-template-columns: repeat(4, minmax(50px, auto)) 200px;
+			"
+		>
+			<header>Header</header>
+			<nav>Nav</nav>
+			<main>
+				<h1>Main</h1>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+				Laudantium et esse consequatur veritatis cumque magni voluptatum
+				deleniti labore neque nulla aliquam facilis, explicabo omnis
+				temporibus dolorum sed optio rerum atque.
+			</main>
+			<footer>Footer</footer>
+		</div> -->
 
 		<!-------------------------------------------------------------------->
 		<!-- LA MOT-CLÉ `AUTO-FILL` ------------------------------------------>
@@ -99,6 +205,24 @@
 		<!-- Il est possible de jumeler la fonction `repeat()` avec le mot-clé `auto-fill` pour générer autant de rangées que nécessaire. Attention, `auto-fill` ne fonctionne toutefois pas avec la taille `auto`. -->
 
 		<!-- Exemple -->
+		<!-- <div
+			style="
+				display: grid;
+				gap: 1rem;
+				grid-template-columns: repeat(auto-fill, 400px);
+			"
+		>
+			<header>Header</header>
+			<nav>Nav</nav>
+			<main>
+				<h1>Main</h1>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+				Laudantium et esse consequatur veritatis cumque magni voluptatum
+				deleniti labore neque nulla aliquam facilis, explicabo omnis
+				temporibus dolorum sed optio rerum atque.
+			</main>
+			<footer>Footer</footer>
+		</div> -->
 
 		<!-------------------------------------------------------------------->
 		<!-- GRILLE IMPLICITE ET EXPLICITE ----------------------------------->
@@ -107,10 +231,40 @@
 		<!-- Jusqu'à présent, nous avons défini les rangées de notre grille *explicitement* avec la propriété `grid-template-columns`, mais elles peuvent aussi être créées *implicitement*. -->
 
 		<!-- Exemple -->
+		<!-- <div style="display: grid; gap: 1rem">
+			<header>Header</header>
+			<nav>Nav</nav>
+			<main>
+				<h1>Main</h1>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+				Laudantium et esse consequatur veritatis cumque magni voluptatum
+				deleniti labore neque nulla aliquam facilis, explicabo omnis
+				temporibus dolorum sed optio rerum atque.
+			</main>
+			<footer>Footer</footer>
+		</div> -->
 
 		<!-- Par défaut, les rangées d'une grille implicite sont `auto` dimensionnées, ce qui signifie qu'elles sont suffisamment grandes pour accueillir le contenu. Si vous voulez que les rangées créées par le navigateur aient une taille donnée, utilisez les propriétés `grid-auto-rows` et `grid-auto-columns`. -->
 
 		<!-- Exemple -->
+		<!-- <div
+			style="
+				display: grid;
+				gap: 1rem;
+				grid-template-columns: repeat(4, minmax(50px, auto));
+			"
+		>
+			<header>Header</header>
+			<nav>Nav</nav>
+			<main>
+				<h1>Main</h1>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+				Laudantium et esse consequatur veritatis cumque magni voluptatum
+				deleniti labore neque nulla aliquam facilis, explicabo omnis
+				temporibus dolorum sed optio rerum atque.
+			</main>
+			<footer>Footer</footer>
+		</div> -->
 
 		<!-------------------------------------------------------------------->
 		<!-- PLACEMENT SUR LES FILS ------------------------------------------>
@@ -119,14 +273,64 @@
 		<!-- Passons maintenant à la mise en place des éléments dans la grille. Si vous inspectez une grille à l'aide de l'inspecteur de votre navigateur Web, vous remarquerez qu'elle contient plusieurs *fils* numérotés selon le mode d'écriture du document. Il est possible de placer les éléments de votre grille sur ces fils à l'aide des propriétés `grid-column` et `grid-row`. Ces propriétés acceptent 2 valeurs séparées par une barre oblique : le numéro de fil de départ / numéro de fil de fin. -->
 
 		<!-- Exemple -->
+		<!-- <div style="display: grid; gap: 1rem; grid-template-columns: 10rem 1fr">
+			<header style="grid-column: 1 / 3">Header</header>
+			<nav>Nav</nav>
+			<main>
+				<h1>Main</h1>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+				Laudantium et esse consequatur veritatis cumque magni voluptatum
+				deleniti labore neque nulla aliquam facilis, explicabo omnis
+				temporibus dolorum sed optio rerum atque.
+			</main>
+			<footer>Footer</footer>
+		</div> -->
 
 		<!-- Vous pouvez aussi utiliser la valeur -1 pour cibler la dernière rangée de la grille et compter vers l'intérieur à partir de la fin en utilisant des valeurs négatives.  -->
 
 		<!-- Exemple -->
+		<!-- <div
+			style="
+				display: grid;
+				gap: 1rem;
+				grid-template-columns: 10rem 1fr 1fr;
+			"
+		>
+			<header style="grid-column: 1 / -1">Header</header>
+			<nav>Nav</nav>
+			<main>
+				<h1>Main</h1>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+				Laudantium et esse consequatur veritatis cumque magni voluptatum
+				deleniti labore neque nulla aliquam facilis, explicabo omnis
+				temporibus dolorum sed optio rerum atque.
+			</main>
+			<footer>Footer</footer>
+		</div> -->
 
 		<!-- Les propriétés `grid-column` et `grid-row` acceptent également la valeur `span` suivi d'un nombre de rangée sur lequel s'étendra l'élément en question. -->
 
 		<!-- Exemple -->
+		<!-- <div
+			style="
+				display: grid;
+				gap: 1rem;
+				grid-template-columns: 10rem 1fr;
+				grid-template-rows: auto 1fr auto;
+				height: 100vh;
+			"
+		>
+			<header style="grid-column: span 2">Header</header>
+			<nav>Nav</nav>
+			<main>
+				<h1>Main</h1>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+				Laudantium et esse consequatur veritatis cumque magni voluptatum
+				deleniti labore neque nulla aliquam facilis, explicabo omnis
+				temporibus dolorum sed optio rerum atque.
+			</main>
+			<footer style="grid-column: span 2">Footer</footer>
+		</div> -->
 
 		<!-------------------------------------------------------------------->
 		<!-- GRID-TEMPLATE-AREAS --------------------------------------------->
@@ -135,6 +339,29 @@
 		<!-- Une autre façon de placer des éléments dans la grille consiste à utiliser la propriété `grid-template-areas` en donnant un nom au divers éléments du design. -->
 
 		<!-- Exemple -->
+		<!-- <div
+			style="
+				display: grid;
+				gap: 1rem;
+				height: 100vh;
+				grid-template-rows: auto 1fr auto;
+				grid-template-areas:
+					'header header header'
+					'superNav content content'
+					'footer footer footer';
+			"
+		>
+			<header style="grid-area: header">Header</header>
+			<nav style="grid-area: superNav">Nav</nav>
+			<main style="grid-area: content">
+				<h1>Main</h1>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+				Laudantium et esse consequatur veritatis cumque magni voluptatum
+				deleniti labore neque nulla aliquam facilis, explicabo omnis
+				temporibus dolorum sed optio rerum atque.
+			</main>
+			<footer style="grid-area: footer">Footer</footer>
+		</div> -->
 
 		<!-------------------------------------------------------------------->
 		<!-- RESSOURCES ------------------------------------------------------>
