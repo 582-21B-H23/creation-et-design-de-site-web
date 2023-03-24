@@ -7,6 +7,9 @@
 		<title><!-- Nom de votre site Web --></title>
 	</head>
 	<body>
-		
+		<?php include "components/header.php" ?>
+		<main>
+			
+		</main>
 	</body>
 </html>
