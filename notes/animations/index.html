@@ -10,13 +10,8 @@
 
 			@keyframes slide {
 				0% {
-					margin-left: 0rem;
+					margin-top: 0;
 					color: red;
-				}
-
-				50% {
-					margin-left: 20rem;
-					color: green;
 				}
 
 				100% {
@@ -61,59 +56,102 @@
 		<!-- Cette propriété permet de déclarer un nom qui pourra être utilisé comme référence à l'animation pour la règle @keyframes. -->
 
 		<!-- Exemple -->
-		<button
-			style="
-				animation-name: slide;
-				animation-duration: 2s;
-				animation-iteration-count: infinite;
-				animation-direction: alternate;
-				animation-timing-function: ease-in-out;
-			"
-		>
-			Button
-		</button>
+		<!-- <button style="animation-name: slide">Button</button> -->
 
 		<!-- animation-duration ---------------------------------------------->
 
 		<!-- Cette propriété définit la durée d'un cycle de l'animation. -->
 
 		<!-- Exemple -->
+		<a style="animation-name: slide; animation-duration: 5s"> Button </a>
 
 		<!-- animation-iteration-count --------------------------------------->
 
 		<!-- Cette propriété détermine le nombre de fois que l'animation est répétée. On peut utiliser le mot-clé `infinite` afin de répéter une animation infiniment. -->
 
 		<!-- Exemple -->
+		<!-- <button
+			style="
+				animation-name: slide;
+				animation-duration: 5s;
+				animation-iteration-count: infinite;
+			"
+		>
+			Button
+		</button> -->
 
 		<!-- animation-delay ------------------------------------------------->
 
 		<!-- Cette propriété définit le délai entre le moment où l'élément est chargé et le moment où l'animation commence. -->
 
 		<!-- Exemple -->
+		<!-- <button
+			style="
+				animation-name: slide;
+				animation-duration: 5s;
+				animation-iteration-count: infinite;
+				animation-delay: 2s;
+			"
+		>
+			Button
+		</button> -->
 
 		<!-- animation-direction --------------------------------------------->
 
 		<!-- Cette propriété indique si l'animation doit alterner entre deux directions de progressions (faire des allers-retours) ou recommencer au début à chaque cycle de répétition. Les valeurs possibles sont `normal`, `reverse`, `alternate` et `alternate-reverse`. -->
 
 		<!-- Exemple -->
+		<!-- <button
+			style="
+				animation-name: slide;
+				animation-duration: 5s;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+			"
+		>
+			Button
+		</button> -->
 
 		<!-- animation-fill-mode --------------------------------------------->
 
 		<!-- Cette propriété indique les valeurs qui doivent être appliquées aux propriétés avant et après l'exécution de l'animation. Les valeurs possibles sont `none`, `forwards`, `backwards` et `both`. -->
 
 		<!-- Exemple -->
+		<!-- <button
+			style="
+				animation-name: slide;
+				animation-duration: 5s;
+				animation-fill-mode: forwards;
+			"
+		>
+			Button
+		</button> -->
 
 		<!-- animation-play-state -------------------------------------------->
 
 		<!-- Cette propriété permet d'interrompre (« pause ») ou de reprendre l'exécution d'une animation. -->
 
 		<!-- Exemple -->
+		<!-- <button style="animation-name: slide; animation-duration: 5s">
+			Button
+		</button> -->
 
 		<!-- animation-timing-function --------------------------------------->
 
 		<!-- Cette propriété configure la fonction de minutage d'une animation, autrement dit comment celle-ci accélère entre l'état initial et l'état final notamment grâce à des fonctions décrivant des courbes d'accélération. -->
 
 		<!-- Exemple -->
+		<!-- <button
+			style="
+				animation-name: slide;
+				animation-duration: 2s;
+				animation-direction: alternate;
+				animation-iteration-count: infinite;
+				animation-timing-function: ease-in-out;
+			"
+		>
+			Button
+		</button> -->
 
 		<!-------------------------------------------------------------------->
 		<!-- DÉFINIR LES ÉTAPES D'UNE ANIMATION ------------------------------>

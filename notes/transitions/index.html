@@ -26,6 +26,7 @@
 		<!-- Les transitions CSS vous permettent de choisir les propriétés à animer en les listant explicitement, le début de l'animation, la durée de l'animation, la façon dont la transition s'exécutera. -->
 
 		<!-- Exemple -->
+		<!-- <button style="transition: background-color 1s">Button</button> -->
 
 		<!-------------------------------------------------------------------->
 		<!-- QUELLES SONT LES PROPRIÉTÉS QUI PEUVENT ÊTRE ANIMÉES ? ---------->
@@ -37,13 +38,12 @@
 
 		<!-- Quoique certains navigateurs permettent les transitions avec la valeur `auto`, cela n'est pas requis par la spécification officielle. Il est donc mieux de l'éviter.  -->
 
-		<!-- Exemple -->
-
 		<!-- `.appendChild()` ET `display: none;` ---------------------------->
 
 		<!-- Attention lorsqu'on manipule des transitions directement après avoir ajouté un élément via .appendChild() ou en supprimant la propriété display: none;. Cela sera compris comme si l'état initial n'avait jamais eu lieu et que l'élément avait toujours été dans son état final. Pour contourner ce problème, on peut appliquer `window.setTimeout()` pendant quelques millisecondes avant de modifier la propriété CSS sur laquelle on souhaite appliquer une transition. -->
 
 		<!-- Exemple -->
+		<!-- <button style="transition: background 5s">Button</button> -->
 
 		<!-------------------------------------------------------------------->
 		<!-- LES PROPRIÉTÉS RELATIVES AUX TRANSITIONS ------------------------>
@@ -54,30 +54,55 @@
 		<!-- Cette propriété définit le nom des propriétés CSS pour lesquelles on veut appliquer des transitions. Seules les propriétés listées ici seront sujettes aux transitions. Les modifications appliquées aux autres propriétés seront instantanées. -->
 
 		<!-- Exemple -->
+		<!-- <button style="transition-property: background">Button</button> -->
 
 		<!-- `transition-duration` ------------------------------------------->
 
 		<!-- Cette propriété définit la durée de la transition. On peut définir une durée pour toutes les transitions ou une durée pour chacune des propriétés. -->
 
 		<!-- Exemple -->
+		<!-- <button
+			style="transition-property: background; transition-duration: 5s"
+		>
+			Button
+		</button> -->
 
 		<!-- `transition-timing-function` ------------------------------------>
 
 		<!-- Cette propriété définit une fonction qui décrit la façon dont les valeurs intermédiaires sont calculées. On utilise pour cela des fonctions de temporisation. -->
 
 		<!-- Exemple -->
+		<!-- <button
+			style="
+				transition-property: background;
+				transition-duration: 1s;
+				transition-timing-function: ease-in-out;
+			"
+		>
+			Button
+		</button> -->
 
 		<!-- `transition-delay` ---------------------------------------------->
 
 		<!-- Cette propriété indique le temps à attendre entre le moment où la propriété est modifiée et le début de la transition. -->
 
 		<!-- Exemple -->
+		<!-- <button
+			style="
+				transition-property: background;
+				transition-duration: 1s;
+				transition-delay: 1s;
+			"
+		>
+			Button
+		</button> -->
 
 		<!-- `transition` ---------------------------------------------------->
 
 		<!-- La syntaxe de la propriété raccourcie transition est : `transition: <property> <duration> <timing-function> <delay>`. -->
 
 		<!-- Exemple -->
+		<!-- <button style="transition: background 1s ease-in-out 1s">Button</button> -->
 
 		<!-------------------------------------------------------------------->
 		<!-- POST-SCRIPTUM SUR LES TRANSITIONS ------------------------------->
@@ -88,12 +113,21 @@
 		<!-- Selon cette étude, un temps de réponse de 100ms ou moins semble instantané pour l'utilisateur·rice.  -->
 
 		<!-- Exemple -->
+		<!-- <button style="transition: background 1s; transition-delay: 100ms">
+			Button
+		</button> -->
 
 		<!-- Après 1s, l'utilisateur·rice se sent toujours « connecté » à l'interface. -->
+		<!-- <button style="transition: background 1s; transition-delay: 1s">
+			Button
+		</button> -->
 
 		<!-- Exemple -->
 
 		<!-- Après 10s, l'utilisateur·rice commence à se sentir déconnecté·e. -->
+		<!-- <button style="transition: background 1s; transition-delay: 10s">
+			Button
+		</button> -->
 
 		<!-------------------------------------------------------------------->
 
@@ -104,6 +138,7 @@
 		<!-- Selon https://humanbenchmark.com, un ou une utilisatrice prend en moyenne 273ms pour réagir à un changement visuel. C'est pourquoi la majorité des animations dans divers interfaces ont une durée entre 200ms et 300ms.  -->
 
 		<!-- Exemple -->
+		<!-- <button style="transition: background 300ms">Button</button> -->
 
 		<!-------------------------------------------------------------------->
 		<!-- RESSOURCES ------------------------------------------------------>
@@ -111,5 +146,6 @@
 
 		<!-- https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions -->
 		<!-- https://www.joshwcomeau.com/animation/css-transitions/ -->
+		<!-- https://cubic-bezier.com/ -->
 	</body>
 </html>
