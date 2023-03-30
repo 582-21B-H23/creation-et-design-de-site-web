@@ -4,7 +4,28 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Variables CSS</title>
-		<style></style>
+		<style>
+			:root {
+				--color-main: blue;
+				--color-accent: lightblue;
+
+				/* Il est possible d'enchaîner les variables. */
+				--text-color: var(--color-main);
+			}
+
+			button {
+				color: var(--text-color);
+			}
+
+			/* Si votre fenêtre est plus petite que 800px, la valeur de la variable `--color-main` devient `red`. */
+			@media (max-width: 800px) {
+				:root {
+					--color-main: red;
+				}
+			}
+		</style>
 	</head>
-	<body></body>
+	<body>
+		<button>Button</button>
+	</body>
 </html>
