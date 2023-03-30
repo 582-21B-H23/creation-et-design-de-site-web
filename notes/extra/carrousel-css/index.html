@@ -9,27 +9,27 @@
 			/******************************************************************/
 			/* GENERAL ********************************************************/
 			/******************************************************************/
-
+			
 			body {
 				margin: 0;
 			}
-
+			
 			h1 {
 				text-align: center;
 			}
-
+			
 			ul {
 				padding: 0;
 			}
-
+			
 			li {
 				list-style: none;
 			}
-
+			
 			/******************************************************************/
 			/* CARROUSEL ******************************************************/
 			/******************************************************************/
-
+			
 			.carrousel {
 				--carrousel-img-width: 100vw;
 				display: flex;
@@ -40,11 +40,11 @@
 				scroll-snap-type: x mandatory;
 				scrollbar-width: none; /* Firefox */
 			}
-
+			
 			.carrousel::-webkit-scrollbar {
 				display: none; /* Safari et Chrome */
 			}
-
+			
 			.carrousel li {
 				display: flex;
 				justify-content: center;
@@ -55,19 +55,19 @@
 				border: 1px solid gray;
 				scroll-snap-align: center;
 			}
-
+			
 			.carrousel::before,
 			.carrousel::after {
 				content: "";
 				min-width: calc((100vw - var(--carrousel-img-width)) / 2);
 			}
-
+			
 			/* CARROUSEL NAV **************************************************/
-
+			
 			.carrousel-nav {
 				text-align: center;
 			}
-
+			
 			.carrousel-nav li {
 				display: inline-block;
 			}

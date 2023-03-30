@@ -7,7 +7,7 @@
 				["name" => "À propos", "url" => "/about"],
 				["name" => "Contact", "url" => "/contact"]
 			];
-	
+				
 			// Boucle qui parcourt chaque item du tableau
 			foreach ($navItems as $navItem):
 		?>
